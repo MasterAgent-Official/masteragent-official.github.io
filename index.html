@@ -38,13 +38,29 @@
                         <p class="card-text">This is some sample text inside the card.</p>
                     </div>
                 </div>
-                <div class="mt-3">
-                    <button class="btn btn-primary">Button 1</button>
-                    <button class="btn btn-secondary">Button 2</button>
+                <div class="container text-center mt-5">
+                    <button class="btn btn-primary mb-2" onclick="openViber()">
+                        <i class="fab fa-viber"></i> Open Viber
+                    </button>
+                    <button class="btn btn-success" onclick="openTelegram()">
+                        <i class="fab fa-telegram"></i> Open Telegram
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+    
+    <script>
+        function openViber() {
+            // Replace '123456789' with the specific Viber phone number or link
+            window.location.href = 'viber://chat?number=+959771413123';
+        }
+
+        function openTelegram() {
+            // Replace 'your_telegram_username' with the specific Telegram username or link
+            window.location.href = 'https://t.me/your_telegram_username';
+        }
+    </script>
 
     <!-- Include Bootstrap JS and jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
