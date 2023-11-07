@@ -71,6 +71,11 @@
             box-shadow: 0 10px 10px rgba(6, 218, 237, 0.5);
         }
 
+        .button3 {
+            background-color: #0eed06;
+            box-shadow: 0 10px 10px rgba(6, 237, 91, 0.5);
+        }
+
         .button:active {
             transform: scale(0.95);
         }
@@ -101,7 +106,6 @@
 
 <body>
     <div class="container">
-        <img src="images/playcard.png" alt="Description of the image" style="width: 200px; height: auto;">
         <div class="card">
             <div class="text">
                 တောင်ပေါ်သားရှမ်းကိုးမီးကစားရန် <br>
@@ -111,15 +115,19 @@
             </div>
         </div>
         <div class="button-container">
+            <button class="button button3" onclick="openViber()">
+                <i class="fab fa-user"></i> အကောင့် လော့အင် ဝင်ရန် </button>
+            <br />
+            <br />
             <!-- <a href="viber://chat?number=959987654321" target="_blank"> -->
             <button class="button button1" onclick="openViber()">
-                <i class="fab fa-viber"></i> ဗိုက်ဘာ - Viber သို့ <br>ဆက်သွယ်ရန်နှိပ်ပါ</button>
+                <i class="fab fa-viber"></i> Viber မှ အကောင့်ဖွင့်ရန်နှိပ်ပါ။</button>
             <!-- </a> -->
             <br />
             <br />
             <!-- <a href="https://t.me/cloud9skm_bot" target="_blank"> -->
             <button class="button button2" onclick="openTelegram()">
-                <i class="fab fa-telegram"></i> တယ်လီဂရမ် - Telegram သို့ <br>ဆက်သွယ်ရန်နှိပ်ပါ</button>
+                <i class="fab fa-telegram"></i> Telegram မှ အကောင့်ဖွင့်ရန်နှိပ်ပါ။</button>
             <!-- </a> -->
         </div>
     </div>
